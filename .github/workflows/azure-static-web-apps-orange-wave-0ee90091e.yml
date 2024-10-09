@@ -21,7 +21,7 @@ jobs:
           lfs: false
       - name: Build And Deploy
         id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
+        uses: Azure/static-web-apps-deploy@v2
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_WAVE_0EE90091E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Close Pull Request
         id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
+        uses: Azure/static-web-apps-deploy@v2
         with:
-          azure_static_web_apps_api_token: ${{ 2c88b5c8050d7dc52a575de5525fea84e649d241d3482aa3d6039c682c7c897d5-e84385e7-c692-49e9-a92c-12bf466869c901e286786 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_WAVE_0EE90091E }}
           action: "close"
